@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goibibo</title>
+    <link rel="shortcut icon" href="SampleData/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cssPractice.css">
+</head>
+
+<body>
+    <div>
+        <center>
+            <h1>TRAVELL BOOKING WITH LOWEST PRICE</h1>
+        </center>
+    </div>
+
+    <form action="/travelling">
+        <center>
+            <div>
+                <img src="https://w0.peakpx.com/wallpaper/43/30/HD-wallpaper-travel-couple-lifestyle.jpg"
+                    alt="Error while loading" width="1000" height="300">
+            </div>
+        </center> <br>
+        <div><h3>Travellers Details</h3></div>
+        <br>
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+            <br>
+        <div>
+            <label for="name"><b>Name</b><span>*</span></label>
+            <input type="text" name="name" id="name" required placeholder="Enter Your Name">
+        </div><br>
+        <div>
+            <label for="mail"><b>Email</b><span>*</span></label>
+            <input type="email" name="mail" id="mail" required placeholder="Enter Your Email">
+        </div><br>
+        <div>
+            <label for="add"><b>Address</b></label>
+            <input type="text" name="add" id="add"  placeholder="Enter Your Address">
+        </div><br>
+        <div>
+            <label for="city"><b>City</b><span>*</span></label>
+            <input type="text" name="city" id="city" required placeholder="Enter Your city">
+        </div><br>
+        <div>
+            <label for="state"><b>State</b><span>*</span></label>
+            <input type="text" name="state" id="state" required placeholder="Enter Your state name">
+        </div><br>
+        <div>
+            <label for="pin"><b>Pincode</b><span>*</span></label>
+            <input type="text" name="pin" id="pin" required placeholder="Enter Your Pincode">
+        </div><br>
+        <div>
+            <label for="num"><b>Phone No.</b><span>*</span></label>
+            <input type="number" name="num" id="num" required placeholder="Enter Your Mobile number">
+        </div><br>
+        <br>
+        </fieldset>
+<br>
+        <fieldset>
+            <legend><b>Travelling Details</b></legend>
+            <br>
+            <span>
+                <label for="date"><b>Travelling Date</b><span>*</span></label>
+                <input type="date" name="date" id="date" required title="Please Select a Date">
+            </span>
+            <span>
+                <label for="rdate"><b>Return Date</b><span>*</span></label>
+                <input type="date" name="rdate" id="rdate" required title="Please Select a Return Date">
+            </span><br><hr>
+            <div><h3>Select Location</h3></div>
+            <div>
+                <select name="location" id="location">
+                    <option value="No Location">Select Your Location</option>
+                    <option value="Pune">Pune</option>
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Hydrabad">Hydrabad</option>
+                    <option value="Manali">Manali</option>
+                    <option value="Amritsar">Amritsar</option>
+                </select>
+            </div><br>
+            <div><h3>Select Vehicle in which you want to Travell</h3></div>
+            <div>
+                <label for="bus"><span>AC</span></label>
+                <input type="radio" name="bus" id="ac">
+            </div>
+            <div>
+                <label for="bus"><span>Non-AC</span> </label>
+                <input type="radio" name="bus" id="non-ac">
+            </div>
+        </fieldset><br>
+
+        <fieldset>
+            <legend><b>Passenger Details</b></legend>
+            <br>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Sr.No.</th>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><input type="text" placeholder="Name of Passenger"></td>
+                            <td><input type="number" placeholder="Age of Passenger"></td>
+                            <td><input type="text" placeholder="Gender of Passenger"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><input type="text" placeholder="Name of Passenger 2"></td>
+                            <td><input type="number" placeholder="Age of Passenger 2"></td>
+                            <td><input type="text" placeholder="Gender of Passenger 2"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><input type="text" placeholder="Name of Passenger 3"></td>
+                            <td><input type="number" placeholder="Age of Passenger 3"></td>
+                            <td><input type="text" placeholder="Gender of Passenger 3"></td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td><input type="text" placeholder="Name of Passenger 4"></td>
+                            <td><input type="number" placeholder="Age of Passenger 4"></td>
+                            <td><input type="text" placeholder="Gender of Passenger 4"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </fieldset>
+        <label for="fare"><b>Total Fare</b></label>
+        <input type="text" name="fare" id="fare" required>
+        <div>
+            <h5>For Booking Confirmation Make Payment</h5>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

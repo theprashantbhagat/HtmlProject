@@ -1,0 +1,25 @@
+body{
+    margin: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    width: 50%;
+    height: 80px;
+    background-color: yellowgreen;
+    
+}
+.nav-list a{
+
+    color: white;
+    padding: 40px;
+    transition:color 0.2ms ;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+}
+.nav-list li a:hover{
+
+    color: red;
+    font-size: larger;
+}
